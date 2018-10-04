@@ -3,6 +3,12 @@
 
 import os
 import sys
+import re
+
+
+def get_question():
+	question = str(input())
+	return question.lower()
 
 
 def say_hello():
@@ -22,4 +28,4 @@ def which_python(response):
 
 
 if __name__ == "__main__":
-    which_python(say_hello())
+	which_python(say_hello())
